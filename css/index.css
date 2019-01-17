@@ -169,6 +169,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 .container .destination .btn {
   display: flex;
   justify-content: center;
@@ -184,18 +189,50 @@ img {
 .container .destination .btn:hover {
   background-color: #1ab6cf;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+}
+header .logo {
+  width: 30%;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
 nav {
   height: 90px;
   width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  }
 }
 nav a {
   text-decoration: none;
   color: #212529;
   margin-right: 5%;
+}
+@media (max-width: 500px) {
+  nav a {
+    margin: 0;
+  }
 }
 .footer {
   width: 100%;

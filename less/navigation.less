@@ -4,25 +4,41 @@
 
 
 //REM for fonts, PX for heights, % for left and right margins, paddings, width
+header {
+    .custom-layout(space-between, center);
+    border-bottom: @border-bottom;
+
+    @media @mobile {
+        flex-direction: column;
+        .custom-layout(center, center);
+        padding-top: 20px;
+    }
+
+    .logo {
+      width: 30%;
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+  }
 
 nav {
     height: 90px;
     width: 100%;
-    border-bottom: @border-bottom;
     .custom-layout(flex-end, center);
+
+    @media @mobile {
+        .custom-layout(space-around, center);
+        height: 50px;
+    }
 
     a {
         text-decoration: none;
         color: @font-color;
         margin-right: 5%;
+
+        @media @mobile {
+            margin: 0;
+
+        }
     }
 }
-
-
-//// .custom-layout(center, center);
-//.custom-layout(@justify, @align) {
-//    display: flex;
-//    justify-content: @justify;
- //   align-items: @align;
-  //}
-//
