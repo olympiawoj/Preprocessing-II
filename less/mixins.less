@@ -1,1 +1,49 @@
 // Mixins in here
+
+// Buttons: Create a parametric mixin that can create the missing buttons 
+//in the design file. Use the mixins.less file to create your mixin.
+
+
+// Mixins are 
+
+//Mixin to test elements with a red border
+.test-border() {
+    border: 3px dashed red;
+}
+
+//CSS Prefix Mixin
+//Different browsers (Chrome, IE, etc) have different web rendering and web pre-fixes 
+//(also called vendor prefixes). Prefixes are a way for browser makrets to add support for new CSS features
+//before those new features are fully supported on all browsers.
+//Sometimes, you are forced to code for a demographic or financial institution
+//That doesn't allow for web browsers to update.. so you have to use CSS prefixes
+//to make sure your code works on all of the old browsers (make sure they can render your new
+//CSS. 
+
+//The major browsers use the following prefixes:
+//-webkit- (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+//-moz- (Firefox)
+//-o- (Old, pre-WebKit, versions of Opera)
+//-ms- (Internet Explorer and Microsoft Edge)
+
+//EX: Box-sizing is not enabled on older browsers
+//border-box is a default value in the paraneter, type
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+
+// parametric mixin (Because it has params!)
+
+// .custom-layout(center, center);
+.custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+
+
+
+  //Button Mixin
