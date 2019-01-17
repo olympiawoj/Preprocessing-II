@@ -44,8 +44,17 @@
     align-items: @align;
   }
 
-//Border-Var
-
-@border-bottom: 2px dashed #C0C0C0;
 
   //Button Mixin
+
+.custom-button(@width, @height) {
+    width: @width;
+    height: @height;
+    background-color: @button-bg;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(@button-bg, 5%);
+    }
+}

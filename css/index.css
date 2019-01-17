@@ -169,6 +169,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.container .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 45px;
+  background-color: #17A2B8;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-radius: 12px;
+}
+.container .destination .btn:hover {
+  background-color: #1ab6cf;
+}
 nav {
   height: 90px;
   width: 100%;
