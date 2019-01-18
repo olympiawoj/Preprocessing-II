@@ -26,6 +26,7 @@
       @media @mobile {
         width: 100%;
         order: -1;
+      }
     }
   }
 
@@ -34,10 +35,13 @@
       padding-left: 1%;
       @media @mobile {
         width: 100%;
+        text-align: center;
     }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
       }
     }
 
@@ -51,6 +55,7 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
     }
 
     .img-content {
@@ -78,6 +83,7 @@
 
     @media @mobile {
       flex-direction: column;
+      .custom-layout(center, center);
     }
 
     .destination {
@@ -85,7 +91,9 @@
       margin-bottom: 30px;
       
       @media @mobile {
-        width: 100%;
+        width: 80%;
+        .custom-layout(center, flex-start);
+        flex-direction: column;
       }
 
 
@@ -95,9 +103,10 @@
         font-size: 1.6rem;
         border-radius: 12px;
 
+        @media @mobile {
+          width: 100%;
         }
-        }
+     }
+    }
   }//////content pick
-} ///////// home
-  
-
+}
