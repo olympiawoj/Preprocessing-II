@@ -65,11 +65,17 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 80%;
     margin: 0 auto 30px;
+    padding: 50px;
 
+    @media @mobile {
+      padding: 0;
+      width: 100%;
+    }
     img {
       border-radius: 10px;
+      text-align: center;
     }
   }
 

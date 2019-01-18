@@ -13,13 +13,17 @@ header {
         .custom-layout(center, center);
         padding-top: 20px;
     }
+    
 
     .logo {
-      width: 30%;
+      width: 100%;
       font-weight: bold;
       font-size: 3.5rem;
+      @media @mobile {
+          text-align: center;
     }
   }
+}
 
 nav {
     height: 90px;
@@ -42,3 +46,4 @@ nav {
         }
     }
 }
+
