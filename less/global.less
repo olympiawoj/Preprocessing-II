@@ -1,5 +1,7 @@
+
+
 * {
-  box-sizing: border-box;
+  box-sizing: .box-sizing();
 }
 
 html {
@@ -28,7 +30,7 @@ h4 {
   padding-bottom: 10px;
 }
 
-p {
+p, a {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
@@ -43,4 +45,14 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @tablet {
+    width: 90%;
+  }
+
 }
+  
+
+  
+
+

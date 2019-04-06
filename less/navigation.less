@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+
+
+
+//REM for fonts, PX for heights, % for left and right margins, paddings, width
+header {
+    .custom-layout(space-between, center);
+    border-bottom: @border-bottom;
+
+    @media @mobile {
+        flex-direction: column;
+        .custom-layout(center, center);
+        padding-top: 20px;
+    }
+    
+
+    .logo {
+      width: 100%;
+      font-weight: bold;
+      font-size: 3.5rem;
+      @media @mobile {
+          text-align: center;
+    }
+  }
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    .custom-layout(flex-end, center);
+
+    @media @mobile {
+        .custom-layout(space-around, center);
+        height: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: @font-color;
+        margin-right: 5%;
+
+        @media @mobile {
+            margin: 0;
+
+        }
+    }
+}
+
